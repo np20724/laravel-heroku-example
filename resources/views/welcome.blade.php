@@ -75,14 +75,15 @@
                         <a href="{{ url('/register') }}">Register</a>
                     @endif
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
+<div class="title m-b-md">
+     Laravel
+</div>
+     
+<div classl="title m-b-md">
+     {{ date("d/m/y H:i:s") }}
+</div>   
+             
+             </div> <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
