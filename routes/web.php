@@ -14,13 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('showname/{name}','Hellocontroller@showHello');
-<?php
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-class HelloController extends Controller
-{
-function showHello(){
-  return '<h1>Hello Contreller : Monnaphon</h1';
-  }
-}
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('users', function () {
+    return '<h1>New Users!</h1>';
+});
+Route::get('/edit', function () {
+    return view('home');
+});
