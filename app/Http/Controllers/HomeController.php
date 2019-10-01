@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HelloController extends Controller
 {
-    function showHello(){
-       return  '<h1>Hello controller</h1>'
-    }
+    function show(){
+      return view('users')
+      ->with('name','natthaphat')
+      ->with('title','Laravel tutorial');
+  }
 }
