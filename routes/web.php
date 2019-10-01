@@ -21,6 +21,3 @@ Route::get('/', function () {
     return '<h1>Hello Larval</h1>';
 });
 Route::get('welcome/name','Hellocontroller@showHello');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
